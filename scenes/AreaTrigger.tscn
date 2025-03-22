@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj7ak0286dp7i"]
+
+[ext_resource type="Script" path="res://scenes/script/area_trigger.gd" id="1_ip0fk"]
+[ext_resource type="Material" uid="uid://b8jy5lnusyd8f" path="res://assets/finish.tres" id="2_tvpl4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wgvoo"]
+size = Vector3(1.85925, 3.47363, 1)
+
+[node name="Area Trigger" type="Area3D"]
+script = ExtResource("1_ip0fk")
+sceneName = "Level1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.429626, 1.23682, 0)
+shape = SubResource("BoxShape3D_wgvoo")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.408691, 0)
+size = Vector3(1, 0.182617, 1)
+material = ExtResource("2_tvpl4")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.15902, 0, 0, 0, 0.15902, 0, 0, 0, 0.15902, 0, 1.25334, 0)
+size = Vector3(1, 20.4223, 1)
+material = ExtResource("2_tvpl4")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGCombiner3D"]
+transform = Transform3D(0.862606, 0, 0, 0, 0.774101, 0, 0, 0, 0.0579438, 0, 1.85988, 0.0208728)
+polygon = PackedVector2Array(0, 0, 0, 1, 0.455534, 0.750555, 1.09706, 0.378377)
+material = ExtResource("2_tvpl4")
+
+[connection signal="body_entered" from="." to="." method="_on_Area_Trigger_body_entered"]

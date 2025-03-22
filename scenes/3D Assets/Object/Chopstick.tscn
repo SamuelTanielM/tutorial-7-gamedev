@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=4 uid="uid://cqle53fimqh6c"]
+
+[ext_resource type="Script" path="res://scenes/script/Pickubable.gd" id="1_nu5g1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ep6mq"]
+resource_name = "KnifeHandler"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.197391, 0.197192, 0.244041, 1)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s864b"]
+_surfaces = [{
+"aabb": AABB(-2.16145, -1, -1, 5.1504, 2, 2),
+"format": 34359742465,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAABAAAAAAAFAAQABgAEAAUABQAHAAYAAgAGAAcABwADAAIAAwAHAAUABQAAAAMAAgABAAQABAAGAAIACAAJAAoACgALAAgADAANAAoACgAJAAwADgAPAA0ADQAMAA4ACAALAA8ADwAOAAgADQAPAAsACwAKAA0ACAAOAAwADAAJAAgA"),
+"name": "KnifeHandler",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("NBfRvwAAgL8AAIC/RlUKwAAAgD8AAIC/tlemvwSBKj8AAIA/tlemvwSBKr8AAIA/YFQlvgAAgD8AAIC/YFQlvgAAgL8AAIC/sCkFPQSBKj8AAIA/sCkFPQSBKr8AAIA/YiEIQASBKj8AAIA/zUo/QP//fz8AAIC/IYEdQP//f78AAIC/YiEIQASBKr8AAIA/NCt9P///fz8AAIC/NCt9P///f78AAIC/hINLPwSBKj8AAIA/hINLPwSBKr8AAIA/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_s2boo"]
+resource_name = "Cube_006"
+_surfaces = [{
+"aabb": AABB(-2.16145, -1, -1, 5.1504, 2, 2),
+"attribute_data": PackedByteArray("AADAPgAAQD8AACA/AABAPwAAID8AAIA/AADAPgAAgD8AACA/AAAAPwAAID8AAEA/AADAPgAAQD8AAMA+AAAAPwAAID8AAIA+AAAgPwAAAD8AAMA+AAAAPwAAwD4AAIA+AAAgPwAAAAAAACA/AACAPgAAwD4AAIA+AADAPgAAAAAAAAA+AACAPgAAwD4AAIA+AADAPgAAAD8AAAA+AAAAPwAAYD8AAIA+AABgPwAAAD8AACA/AAAAPwAAID8AAIA+AAAgPwAAgD8AACA/AABAPwAAwD4AAEA/AADAPgAAgD8AACA/AAAAPwAAwD4AAAA/AADAPgAAQD8AACA/AABAPwAAID8AAIA+AADAPgAAgD4AAMA+AAAAPwAAID8AAAA/AAAgPwAAAAAAAMA+AAAAAAAAwD4AAIA+AAAgPwAAgD4AAMA+AAAAPwAAwD4AAIA+AAAAPgAAgD4AAAA+AAAAPwAAYD8AAIA+AAAgPwAAgD4AACA/AAAAPwAAYD8AAAA/"),
+"format": 34359742487,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA"),
+"material": SubResource("StandardMaterial3D_ep6mq"),
+"name": "KnifeHandler",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("NBfRvwAAgL8AAIC/RlUKwAAAgD8AAIC/tlemvwSBKj8AAIA/tlemvwSBKr8AAIA/YFQlvgAAgD8AAIC/RlUKwAAAgD8AAIC/NBfRvwAAgL8AAIC/YFQlvgAAgL8AAIC/sCkFPQSBKj8AAIA/YFQlvgAAgD8AAIC/YFQlvgAAgL8AAIC/sCkFPQSBKr8AAIA/tlemvwSBKj8AAIA/sCkFPQSBKj8AAIA/sCkFPQSBKr8AAIA/tlemvwSBKr8AAIA/tlemvwSBKr8AAIA/sCkFPQSBKr8AAIA/YFQlvgAAgL8AAIC/NBfRvwAAgL8AAIC/tlemvwSBKj8AAIA/RlUKwAAAgD8AAIC/YFQlvgAAgD8AAIC/sCkFPQSBKj8AAIA/YiEIQASBKj8AAIA/zUo/QP//fz8AAIC/IYEdQP//f78AAIC/YiEIQASBKr8AAIA/NCt9P///fz8AAIC/NCt9P///f78AAIC/IYEdQP//f78AAIC/zUo/QP//fz8AAIC/hINLPwSBKj8AAIA/hINLPwSBKr8AAIA/NCt9P///f78AAIC/NCt9P///fz8AAIC/YiEIQASBKj8AAIA/YiEIQASBKr8AAIA/hINLPwSBKr8AAIA/hINLPwSBKj8AAIA/NCt9P///f78AAIC/hINLPwSBKr8AAIA/YiEIQASBKr8AAIA/IYEdQP//f78AAIC/YiEIQASBKj8AAIA/hINLPwSBKj8AAIA/NCt9P///fz8AAIC/zUo/QP//fz8AAIC/LCgVciluOfcsKBVyJGsP9ywoFXLWbvr2LCgVcldw0/X/////zW5l9/////9EZaHy/////51xzfj//////3//////UIv/f/////9Qi/9//////1CL/3//////UIv/f////3//f/9/////f/9//3////9//3//f////3//f/9/////f1AS////v/9/UBL///+//39QEv///7//f1AS////v/9/ru0AAP+//3+u7QAA/7//f67tAAD/v/9/ru0AAP+/0tcVciiRBAnS1xVy2pTvCNLXFXLVkcUI0tcVcqePKwr/////MZGZCP//////fwAA/////2GOMQf/////uppdDQAAUIv/fwAAAABQi/9/AAAAAFCL/38AAAAAUIv/fwAA/3//f/9/AAD/f/9//38AAP9//3//fwAA/3//f/9/AAD/f1ASAAD/P/9/UBIAAP8//39QEgAA/z//f1ASAAD/P/9/ru3///8//3+u7f///z//f67t////P/9/ru3///8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_s864b")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i2h6g"]
+size = Vector3(0.151367, 0.0903625, 2.3714)
+
+[node name="Chopstick" type="Node3D"]
+
+[node name="Chopstick" type="RigidBody3D" parent="."]
+script = ExtResource("1_nu5g1")
+prompt_message = "Chopstick"
+
+[node name="Chopstick" type="MeshInstance3D" parent="Chopstick"]
+transform = Transform3D(0.0355424, -3.10721e-09, 0, 3.10721e-09, 0.0355424, 0, 0, 0, -1.14564, 0, 0, 0)
+mesh = SubResource("ArrayMesh_s2boo")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chopstick"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0175171, 0.0049591, -0.0260811)
+shape = SubResource("BoxShape3D_i2h6g")
+
+[connection signal="interacted" from="Chopstick" to="Chopstick" method="_on_interacted"]
